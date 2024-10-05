@@ -1,0 +1,10 @@
+<h1>Counter</h1>
+<div class="counter">
+  <p><strong [class]="{'gr':evenFlag}">{{isEven}}</strong></p>
+  <h2>Count: <span class="count">{{count}}</span></h2>
+<div>
+<button (click)="increase()" [disabled]="isDisabled">+</button>
+<button (click)="decrease()">-</button>
+<button (click)="reset()">Reset</button>
+</div>
+</div>
